@@ -1,0 +1,87 @@
+<!--HTML - HyperText Markup Language -->
+<!--HTML tells a browser the structure or your web page -->
+<!--
+    HTML - Structure
+    CSS - Style
+    JAVASCRIPT- Funtionality
+-->
+
+<!--
+    Anatomy of an HTML tag
+    Elements itself - what is being rendered
+    Attributes - modifies the element in some way
+    Value of attribute - how we are modifying the element
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <!-- Code a little, test alot-->
+    <h1>Registration Form</h1>
+    <form>
+        <div>
+            <label>First Name:*</label>
+            <input type="text" name="first_name">
+        </div>
+        <div>
+            <label>Last Name:*</label>
+            <input type="text" name="last_name">
+        </div>
+        <div>
+            <label>Email Address:*</label>
+            <input type="text" name="email">
+        </div>
+        <div>
+            <label>Password:*</label>
+            <input type="text" name="password">
+        </div>
+        <div>
+            <label>Confirm Password:*</label>
+            <input type="text" name="confirm_password">
+        </div>
+        <div>
+            <label>Birthday:</label>
+            <input type="text" name="birthday" placeholder="mm/dd/yyyy">
+        </div>
+        <div>
+            <label>Gender Identity:</label>
+            <br>
+            <input type="radio" name="gender_identity" value="Male" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="gender_identity" value="Female" id="Female">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender_identity" value="Non-binary" id="Non-binary">
+            <label for="Non-binary">Non-binary</label>
+            <input type="radio" name="gender_identity" value="i_dont_want_to_say" id="i_dont_want_to_say">
+            <label for="i_dont_want_to_say">I dont want to say</label>
+        </div>
+        <div>
+            <p>A short description about myself:</p>
+            <textarea name="About_me" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <p>Favorite Language: 
+            <select name="Language" id="lang">
+                <option value="language">HTML</option>
+                <option value="language">CSS</option>
+                <option value="language">JAVASCRIPT-</option>
+            </select>
+            </p>language
+        </div>
+        <div>
+            <input type="checkbox" name="accept" id="accept">
+            <label for="accept">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <div>
+            <input type="submit" value="Create Account">
+            <p>*Indicates a required field</p>
+        </div>
+    </form>
+</body>
+</html>
